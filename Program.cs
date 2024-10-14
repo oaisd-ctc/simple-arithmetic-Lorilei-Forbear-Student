@@ -12,5 +12,15 @@ public class Program
         float numTwo = float.Parse (numTwoString);
         float sum = (numOne + numTwo);
         Console.WriteLine("Your sum is " + sum + ".");
+        //break
+        Console.WriteLine("Please provide another number.");
+        string numThreeString = Console.ReadLine();
+        float numThree = float.Parse (numThreeString);
+        Console.WriteLine("Please provide a number to subtract from " + numThree + ".");
+        string numFourString = Console.ReadLine();
+        float numFour = float.Parse (numFourString);
+        float difference = (numThree - numFour);
+        Console.WriteLine("Your difference is " + difference + ".");
+        //break
     }
 }
