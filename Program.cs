@@ -22,5 +22,22 @@ public class Program
         float difference = (numThree - numFour);
         Console.WriteLine("Your difference is " + difference + ".");
         //break
+        Console.WriteLine("Please provide another number.");
+        string numFiveString = Console.ReadLine();
+        float numFive = float.Parse (numFiveString);
+        Console.WriteLine("Please provide a number to multiply " + numFive + " by.");
+        string numSixString = Console.ReadLine();
+        float numSix = float.Parse (numSixString);
+        float product = (numFive * numSix);
+        Console.WriteLine("Your product is " + product + ".");
+        //break
+        Console.WriteLine("Please provide another number.");
+        string numSevenString = Console.ReadLine();
+        int numSeven = int.Parse (numSevenString);
+        Console.WriteLine("Please provide a number to divide " + numSeven + " by.");
+        string numEightString = Console.ReadLine();
+        int numEight = int.Parse (numEightString);
+        int quotient = (numSeven / numEight);
+        Console.WriteLine("Your quotient is " + quotient + ".");
     }
 }
