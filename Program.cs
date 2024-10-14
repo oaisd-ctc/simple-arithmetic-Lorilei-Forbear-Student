@@ -34,10 +34,21 @@ public class Program
         Console.WriteLine("Please provide another number.");
         string numSevenString = Console.ReadLine();
         int numSeven = int.Parse (numSevenString);
-        Console.WriteLine("Please provide a number to divide " + numSeven + " by.");
+        Console.WriteLine("Please provide a number to divide " + numSeven + " by. There will be no decimals or remainders for this operation.");
         string numEightString = Console.ReadLine();
         int numEight = int.Parse (numEightString);
         int quotient = (numSeven / numEight);
         Console.WriteLine("Your quotient is " + quotient + ".");
+        //break
+        Console.WriteLine("Please provide another number.");
+        string numNineString = Console.ReadLine();
+        float numNine = float.Parse (numNineString);
+        Console.WriteLine("Please provide a number to divide " + numNine + " by. This operation will output decimals.");
+        string numTenString = Console.ReadLine();
+        float numTen = float.Parse (numTenString);
+        float decQuotient = (numNine / numTen);
+        Console.WriteLine("Your quotient is " + decQuotient + ".");
+        //break
+
     }
 }
