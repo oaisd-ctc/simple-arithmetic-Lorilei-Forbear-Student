@@ -49,6 +49,14 @@ public class Program
         float decQuotient = (numNine / numTen);
         Console.WriteLine("Your quotient is " + decQuotient + ".");
         //break
-
+        Console.WriteLine("Please provide another number.");
+        string numElevenString = Console.ReadLine();
+        float numEleven = float.Parse (numElevenString);
+        Console.WriteLine("Please provide a number to divide " + numEleven + " by. This operation takes the remainder of the numbers.");
+        string numTwelveString = Console.ReadLine();
+        float numTwelve = float.Parse (numTwelveString);
+        float remainder = (numEleven % numTwelve);
+        Console.WriteLine("Your remainder is " + remainder + ".");
+        Console.WriteLine("Finished program");
     }
 }
